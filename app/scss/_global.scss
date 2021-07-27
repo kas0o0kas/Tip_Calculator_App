@@ -1,0 +1,32 @@
+body {
+    box-sizing: border-box;
+    background-color: $lightGrayishCyan1;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+input:visited {
+    border: 0;
+}
+
+.main {
+    @include breakpoint_up(large){
+        position: relative;
+        left: 50%;
+        transform: translateX((-50%));
+        width: 920px;
+        height: 483px;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        justify-content: space-around;
+        border-radius: 20px;
+        margin-bottom: 238px;
+    }
+}

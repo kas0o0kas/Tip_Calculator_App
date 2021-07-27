@@ -1,0 +1,11 @@
+.header {
+    
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    @include breakpoint_up(large){
+        padding-top: 162px;
+        padding-bottom: 88px;
+    }
+}

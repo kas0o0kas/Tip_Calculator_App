@@ -1,0 +1,158 @@
+.information {
+    background-color: $white;
+    padding-top: 38px;
+    padding-left: 32px;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    font-weight: 700;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    @include breakpoint_up(large){
+        width: 42%;
+        height: 88%;
+        padding: 0;
+        margin: 0;
+        padding-left: 25px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: $darkGrayishCyan1;
+        margin-bottom: 12px;
+        
+    }
+
+    input {
+        font-family: 'Space Mono', monospace;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__bill {
+        margin-bottom: 38px;
+
+        .bill__text {
+            .bill__notice {
+                color: red;
+                position: relative;
+            }
+        }
+        
+        .bill__input {
+            position: relative;
+
+            .icon__dollar {
+                position: absolute;
+                left: 20px;
+                top: 16px;
+                transform: scale(120%);
+            }
+
+            input {
+                text-align: right;
+                width: 78%;
+                padding-top: 8px;
+                padding-right: 15px;
+                padding-bottom: 8px;
+                padding-left: 50px;
+                border-radius: 10px;
+                background-color: $lightGrayishCyan2;
+                border: transparent;
+                color: $veryDarkCyan;
+                font-size: 22px;
+                outline: none;
+                transition: all 200ms ease-in-out;
+            } 
+        }
+    }
+
+    &__tip {
+        .tip__button {
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 18px;
+            margin-bottom: 38px;
+
+            @include breakpoint_up(large){
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .tip__custom {
+                text-align: center;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                width: 100%;
+                background-color: $lightGrayishCyan2;
+                color: $veryDarkCyan;
+                border-radius: 10px;
+                border: 0px;
+                outline: none;
+            }
+
+            .tip__value {
+                text-align: center;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                width: 100%;
+                background-color: $veryDarkCyan;
+                color: $white;
+                border-radius: 10px;
+                border: 0px;
+
+                &.click {
+                    background-color: $strongCyan;
+                    color: $veryDarkCyan;
+                }
+
+                &.hover {
+                    background-color: #9FE8DF;
+                    color: $veryDarkCyan;
+                }
+                
+            }
+
+        }
+    }
+
+    &__gast {
+
+        .gast__text {
+            .gast__notice {
+                color: red;
+                position: relative;
+
+            }
+        }
+        .gast__input {
+            position: relative;
+
+            .icon__person {
+                position: absolute;
+                left: 20px;
+                top: 16px;
+                transform: scale(120%);
+            }
+
+            input {
+                text-align: right;
+                width: 80%;
+                padding-top: 8px;
+                padding-right: 15px;
+                padding-bottom: 8px;
+                padding-left: 50px;
+                border-radius: 10px;
+                background-color: $lightGrayishCyan2;
+                border: transparent;
+                color: $veryDarkCyan;
+                font-size: 22px;
+                outline: none;
+
+            }
+            
+        }
+    }
+}
